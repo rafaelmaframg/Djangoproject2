@@ -1,0 +1,233 @@
+
+/* import fonts from fonts.css file */
+@import url('fonts.css');
+
+/* css variables */
+@import url('../partials/_variables.css');
+
+/* global styling  */
+@import url('../partials/_globe.css');
+
+@keyframes bounce{
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+    80%{
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes movimento{
+    0%{
+    transform: translateY(10rem) rotateY(-30deg);
+    }
+    100%{
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+    }
+    }
+
+/* start  navigation */
+
+#menu-icon  {
+    opacity: 0.5;
+}
+#menu-icon:hover  {
+    animation: bounce 1s;
+    opacity: 0.7;
+}
+
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 1rem 1rem 1rem;
+}
+.header_area .main-menu .navbar{
+    padding: 1rem 10rem;
+
+}
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    animation: bounce 1s;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* end navigation */
+
+/* Banner Area */
+
+.site-main .site-banner .site-title h3{
+padding-top:5%;
+font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+content:'';
+height:2px;
+width:18vw;
+background: black;
+display: inline-block;
+margin-left: 5%;
+transform:translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4{
+font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+padding: 2rem 0;
+width: 90rem;
+}
+
+/* End Banner Area */
+
+/* start about area */
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+} 
+
+.site-main .about-area .about-image{
+    padding-top: 6rem;
+}
+
+.site-main .about-area .about-title h2 >span{
+    display: block;
+    padding: 0.2rem;
+    font: normal bold 49px/60px var(--roboto);
+    letter-spacing: 21px;   
+}
+
+.site-main .about-area .about-title .paragraph >p{
+    padding: .4rem 0;
+}
+
+/* end about area */
+
+/* Start brand area */
+
+.site-main .brand-area{
+    padding: 10rem 50rem;
+    margin-bottom: 10rem;
+}
+
+.site-main .brand-area .first-row .col-lg-4{
+    display: block;
+    justify-content: center;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand{
+    filter: grayscale(0.5);
+    text-align: center;
+    padding: 1rem 0rem; 
+    width: 120px;
+    height:120px;
+    cursor: pointer;
+    transition: transform .8s ease ;
+}
+
+
+.tech{
+   display: none;
+}
+.tech h5{
+    text-align: center;
+ }
+.techstack:hover .tech{
+    display: block;
+    text-align: left;
+    position: absolute;
+    left: 200px;
+    top: -65px; 
+    background: #a6dbffe7;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    padding: 5px;
+    opacity: 0;
+    animation: movimento 2s 0.9 forwards;
+}
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
+    position: absolute;
+    filter: grayscale(0);
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    transform: scale(1.2);
+    transition: box-shadow 1s;
+    z-index: 1;
+    }
+
+.site-main .brand-area .experience-area{
+    padding-left: 1rem;
+}
+
+.site-main .brand-area .experience-area span{
+    display: block;
+}
+
+.site-main .brand-area .experience-area .years-area{
+    background: url('../img/client-info-bg.png') no-repeat 0px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+    z-index: -1;
+}
+
+.site-main .brand-area .experience-area .bg-panel{
+    position: relative;
+    left: -230px;
+    top: -350px;
+    background:#2997e015;
+    width: 600px;
+    height: 800px;
+    margin-left: 260px;
+    z-index: -1;
+}
+
+.site-main .brand-area .experience-area .years-area .years{
+    margin-left: -70px;
+    font: normal bold 84px/40px var(--roboto);
+    color: var(--primary-color2);
+    z-index: 2;
+}
+
+.site-main .brand-area .experience-area .years-area .years h2 > span{
+    font: normal 600 22px/30px var(--roboto); 
+    z-index: 1;
+}
+
+.site-main .brand-area .experience-area .call-area{
+    padding-left: 10rem;
+ 
+}
+/* End Brand area */
+
+

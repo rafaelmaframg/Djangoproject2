@@ -1,0 +1,386 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rafael Mafra</title>
+     <!--  Bootstrap css file  -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+     <!--  font awesome icons  -->
+    <link rel="stylesheet" href="{% static 'css/all.min.css'%}">
+
+    <!--  custom css file  -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" >
+   
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
+    <link rel="stylesheet" href="{% static 'css/cssbanner'%}">
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"> </script>
+
+</head>
+
+<!-- ==== Header Area === -->
+<header class="header_area">
+    <div class="main-menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="{% static 'blog/iconmenu4.png'%}" alt="icon" id='menu-icon'></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="ms-auto"></div>
+        <ul class="navbar-nav">
+           <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">Pages</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="mailto:rafaelmafr4@hotmail.com">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+</header>
+<!-- ==== Header Area === -->
+<body>
+<!-- === post ===!>
+{% for post in posts %}
+      {{posts }}
+{% endfor %} '-->
+
+<!-- ============Start Main Area=========== -->
+
+<main class="site-main">
+     <!-- ============Start Banner Area=========== -->
+    <section class="site-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 site-title">
+                    <h3 class="title-text">Hey!</h3>
+                    <div class="site-buttons">
+                      <div class="d-flex flex-row flex-wrap">
+                        <a href='mailto:rafaelmafr4@hotmail.com' >
+                          <button type="button" class="btn button primary-button mr-4 text-uppercase">hire me</button></a> 
+                          <a href='{% static "CvRafaelMafra-PythonDeveloperJR.pdf" %}' download>
+                            <button type="button" class="btn button secondary-button text-uppercase">Get Cv </button></a>
+                      </div>
+                  </div>
+                    <h1 class="typedtext"></h1>
+                    
+                    
+                </div>
+                <div class="col-lg-6 col-md-12 banner-image">
+                    <img src="{% static 'blog/banner2.gif' %}" alt="banner-img" class="img-fluid" height="600" width="600">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============End Banner Area=========== -->
+    <!-- ======================About Area=================-->
+    <section class="about-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="about-image">
+              <img src="{% static 'blog/banner-image.png' %}" alt='About us' class="img-fluid" width="800" height="800">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 about-title">
+            <h2 class="text-uppercase pt-5"> 
+              <span>Let me </span>
+              <span> introduce</span>
+              <span> myself</span>
+            </h2>
+            <div class="paragraph py-4 w-75">
+              <p class="para">
+                I am Rafael Mafra, Student of Python which I am passionate about and programming enthusiastic. 
+                At Pitagoras College (2012/2016), the automation engineering program gave me the chance to learn 
+                Algorithms & Data Structures, Programming Logic and C++ where I found my passion for programming,
+                 since then I have been studying Python and Django by reading many books, watching online classes
+                  and working on some projects. 
+              </p>
+              <p class="para">
+                This year, I moved to England to start working on my career in new place,
+                   looking for new offers, challenges and an opportunity to start develop professionally as an junior 
+                   programmer, assistant or internal. 
+              </p>
+            </div> 
+            <a href='{% static "CvRafaelMafra-PythonDeveloperJR.pdf" %}' download>                     
+            <button type="button" class="btn button primary-button text-uppercase">Download Cv</button></a> 
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- =======================End Area ================-->
+<! ================== Start Brand Area =================-->
+
+<section class="brand-area">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-6 col-lg-12 col-md-12">
+        <div class="first-row row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <div class='techstack'> 
+              <img src="{% static 'img/brand/python.png' %}" alt="brand-1" width="80" height="80" title="Python">
+              <div class='tech'>
+                <br><h5><img src="{% static 'img/brand/python.png' %}" alt="brand-1" width="30" height="30" title="Python"><b>Python</h5></b><br>
+                • Scientific Computing with Python – (Freecodecamp - 300hrs)<br>
+                • Crash course on Python - (Google – 50hrs)<br>
+                • Using Python to iteract with OS – (Google – 50hrs)<br>
+                • Troubleshooting and Debugging techniques (Google - 50 hrs)<br>
+                • Python 3 Advanced - ( Alura – 100hrs )<br>
+                • Python 3 (CEV-Curso Em Video – 120hrs)<br>
+                • Python POO – (CEV – Curso em video – 40hrs)<br>
+                • Python 3 POO Advanced (Alura – 36 hrs)<br>
+                • TDD Python – (Alura – 6 hrs)<br>
+                • PEP8 Python – (Alura – 8hrs)<br>
+                • Skill Test HackerRank Python (HackerRank)<br>
+                • Developed many financial bot's as freelancer <br>
+                • Extreme Passionate User (this is my hobby) - 300hrs+++<br><br>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="single-brand">
+              <div class='techstack'> 
+              <img src="{% static 'img/brand/django.png' %}" alt="brand-2" width="80" height="80">
+            <div class='tech'><br><h5><img src="{% static 'img/brand/django.png' %}" alt="brand-2" width="60" height="60"><b></h5></b><br>
+              • WebApp Technologies and Django – (University of Michigan - 50hrs)<br>
+              • Django Advanced – (Alura – 100hrs)<br>
+              • Front-end Formation (Alura - 100hrs)<br><br></div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="single-brand">
+            <div class='techstack'> 
+            <img src="{% static 'img/brand/java2.png' %}" alt="brand-3" width="100" height="100">
+            <div class='tech'><br><h5><img src="{% static 'img/brand/java2.png' %}" alt="brand-3" width="70" height="70"><b></h5></b>
+              • Algorithms (CEV-Curso em video – 40hrs)<br>
+              • Java Basics (CEV- Curso em video - 40hrs)<br>
+              • Certification Java Advanced – (Alura – 80hrs)<br><br></div>
+              </div>
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="single-brand">
+            <div class='techstack'>
+            <img src="{% static 'img/brand/php.png' %}" alt="brand-4" width="80" height="80">
+            <div class='tech'><br><h5><img src="{% static 'img/brand/php.png' %}" alt="brand-4" width="60" height="60"><b></h5></b>
+              • PHP BASIC ( CEV-Curso em video – 40hrs)<br><br></div>
+              </div>
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="single-brand">
+            <div class='techstack'>
+              <img src="{% static 'img/brand/c+.png' %}" alt="brand-5" width="80" height="80">
+              <div class='tech'><br><h5><img src="{% static 'img/brand/c+.png' %}" alt="brand-5" width="75" height="75"></h5><br>
+                • 6 months learning C++ at engineering course at Pitagoras - Brazil<br><br></div>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-brand">
+          <div class="techstack">
+            <img src="{% static 'img/brand/git.png' %}" alt="brand-6" width="80" height="80 ">
+            <div class='tech'><br><h5><img src="{% static 'img/brand/git.png' %}" alt="brand-6" width="50" height="50"><b>GIT</h5></b><br>
+              • Introduction to Git and GitHub – (Google – 20hrs)<br>
+              • Git and GitHub – (Alura – 6 hrs)<br>
+              • Continuous user - (200hrs+)</div></div>
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="single-brand">
+            <div class="techstack">
+              <img src="{% static 'img/brand/github.png' %}" alt="brand-7" width="75" height="75">
+              <div class='tech'><br><h5><img src="{% static 'img/brand/github.png' %}" alt="brand-7" width="75" height="75"></h5><br>
+                • Introduction to Git and GitHub – (Google – 20hrs)<br>
+                • Git and GitHub – (Alura – 6 hrs)<br>
+                • Continuous user<br><br></div></div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <div class="techstack">
+                <img src="{% static 'img/brand/boot.png' %}" alt="brand-19" width="80" height="80">
+                <div class='tech'><br><h5><img src="{% static 'img/brand/boot.png' %}" alt="brand-19" width="75" height="75"></h5><br>
+                  • Course Bootstrap basics – (alura – 8hrs)<br>
+                  • Course Bootstrap4 - responsive landing page – (Alura – 12 hrs)<br>
+                  • Continuous user <br><br></div></div>
+      
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="single-brand">
+                <div class="techstack">
+                  <img src="{% static 'img/brand/office.png' %}" alt="brand-8" width="80" height="80">
+                  <div class='tech'><br><b><h5><img src="{% static 'img/brand/office.png' %}" alt="brand-8" width="40" height="40">Microsof Office</h5></b><br>
+                    • Many Courses basics <br>
+                    • Continuous user<br><br></div></div>
+                  
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-brand">
+                  <div class="techstack">
+                    <img src="{% static 'img/brand/html.png' %}" alt="brand-9" width="75" height="75">
+                    <div class='tech'><br><h5><img src="{% static 'img/brand/html.png' %}" alt="brand-9" width="75" height="75"></h5><br>
+                      • HTML/CSS/JavaScript Basic (CEV-Curso em video - 40hrs)<br>
+                      • Front-end Formation (Alura - 100hrs) <br><br></div></div>
+                  </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6">
+      <div class="single-brand">
+        <div class="techstack">
+          <img src="{% static 'img/brand/css.png' %}" alt="brand-10" width="75" height="75">
+          <div class='tech'><br><h5><img src="{% static 'img/brand/css.png' %}" alt="brand-10" width="75" height="75"></h5><br>
+            • HTML/CSS/JavaScript Basic (CEV-Curso em video - 40hrs)<br>
+            • Front-end Formation (Alura - 100hrs) <br><br></div></div>
+          
+        </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-brand">
+          <div class="techstack">
+            <img src="{% static 'img/brand/js.png' %}" alt="brand-11" width="75" height="75">
+            <div class='tech'><br><h5><img src="{% static 'img/brand/js.png' %}" alt="brand-11" width="75" height="75"></h5><br>
+              • HTML/CSS/JavaScript Basic (CEV-Curso em video - 40hrs) <br>
+              • Front-end Formation (Alura - 100hrs)<br><br></div></div>
+            
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="single-brand">
+            <div class="techstack">
+            <img src="{% static 'img/brand/qt.png' %}" alt="brand-12" width="75" height="75">
+            <div class='tech'><br><b><h5><img src="{% static 'img/brand/qt.png' %}" alt="brand-12" width="75" height="75">PyQt</h5></b><br>
+              • Developed many bots using graphic interface at PyQt and Tkinter <br><br></div></div>
+             
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <div class="techstack"> 
+                <img src="{% static 'img/brand/linux.png' %}" alt="brand-13" width="75" height="75">
+                <div class='tech'><br><b><h5><img src="{% static 'img/brand/linux.png' %}" alt="brand-13" width="75" height="75">Linux</h5></b><br>
+                  • User Since 2020<br>
+                  • Deploy at linux servers <br><br></div></div>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="single-brand">
+                <div class="techstack">
+                  <img src="{% static 'img/brand/windows.png' %}" alt="brand-14" width="75" height="75">
+                  <div class='tech'><br><b><h5><img src="{% static 'img/brand/windows.png' %}" alt="brand-14" width="75" height="75">Microsof Windows and W. Server</h5></b><br>
+                    • User since 2000<br>
+                  • Many basics courses <br><br></div></div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-brand">
+                  <div class="techstack">
+                    <img src="{% static 'img/brand/server.png' %}" alt="brand-15" width="75" height="75">
+                    <div class='tech'><br><b><h5><img src="{% static 'img/brand/server.png' %}" alt="brand-15" width="75" height="75">Microsof SQL Server</h5></b><br>
+                      • SQL Server Introduction at Microsoft SQL Server 2017 (Alura – 12hrs)<br>
+                    • SQL Server Advanced at Microsoft SQL Server 2017 (Alura – 12 hrs) <br><br></div></div>
+                  </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="single-brand">
+                    <div class="techstack">
+                      <img src="{% static 'img/brand/postgree.png' %}" alt="brand-16" width="75" height="75">
+                      <div class='tech'><br><b><h5><img src="{% static 'img/brand/postgree.png' %}" alt="brand-16" width="75" height="75">Postgre</h5></b><br>
+                        • Work in some projects using postgree<br>
+                        • SQL Server Introduction at Microsoft SQL Server 2017 (Alura – 12hrs)<br>
+                      • SQL Server Advanced at Microsoft SQL Server 2017 (Alura – 12 hrs) <br><br></div></div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <div class="techstack">
+                <img src="{% static 'img/brand/mysql.png' %}" alt="brand-17" width="75" height="75">
+                <div class='tech'><br><b><h5><img src="{% static 'img/brand/mysql.png' %}" alt="brand-17" width="75" height="75"></h5></b><br>
+                  • SQL Server Introduction at Microsoft SQL Server 2017 (Alura – 12hrs)<br>
+                • SQL Server Advanced at Microsoft SQL Server 2017 (Alura – 12 hrs) <br><br></div></div>
+                
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="single-brand">
+                <div class="techstack">
+            <img src="{% static 'img/brand/aws.png' %}" alt="brand-18" width="75" height="75">
+            <div class='tech'><br><b><h5><img src="{% static 'img/brand/aws.png' %}" alt="brand-18" width="75" height="75">Amazon AWS</h5></b><br>
+            • Amazon s3: Storage and manupulation of elements in the cloud<br><br></div></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <div class="techstack">
+          <img src="{% static 'img/brand/wordpress.png' %}" alt="brand-20" width="75" height="75">
+          <div class='tech'><br><b><h5><img src="{% static 'img/brand/wordpress.png' %}" alt="brand-20" width="50" height="50">Wordpress</h5></b><br>
+            • Formation Wordpress ( Alura - 60hrs)<br><br></div></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="single-brand">
+            <div class="techstack">
+        <img src="{% static 'img/brand/azure.png' %}" alt="brand-21" width="75" height="75">
+        <div class='tech'><br><b><h5><img src="{% static 'img/brand/azure.png' %}" alt="brand-21" width="50" height="50">Microsoft Azure</h5></b><br>
+          • AZ-900 Certification: fundamentals ( Alura - 50hrs)<br><br></div></div>
+           </div>
+          </div>
+        </div>
+      </div> 
+      <div class="col-xl-6 col-lg-12 col-md-12">
+        <div class="experience-area" id='experiencia'>
+          <div class="d-flex flex-row years-area">
+            <h2 class="p-3 years">5</h2>
+            <h2>
+              <span>Years</span>
+              <span>Experience</span>
+              <span>Coding</span>
+            </h2>
+          </div>
+          <div class="d-flex flex-row flex-wrap call-area">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-telephone p-2" viewBox="0 0 16 16">
+              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg></span>
+            <div class="call-now">
+              <a href="#" class="text-uppercase h4 font-roboto">Call Now</a>
+              <span class="font-roboto py-2">(+44) 0-7598-629390</span>
+            </div>
+          </div>
+          <div class="bg-panel"></div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
+
+
+<! ================== End Brand Area =================-->
+
+<!-- ============End Main Area=========== -->
+
+</body>
+<script type="text/javascript" src="{% static 'js/animationbanner.js' %}"> </script>
+</html>
