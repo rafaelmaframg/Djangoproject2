@@ -15,15 +15,13 @@
     <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
     <link rel="stylesheet" href="{% static 'css/cssbanner'%}">
     <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"> </script>
-
 </head>
-
 <!-- ==== Header Area === -->
 <header class="header_area">
     <div class="main-menu">
         <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="{% static 'blog/iconmenu4.png'%}" alt="icon" id='menu-icon'></a>
+        <a class="navbar-brand" href="#"><img src="{% static 'blog/RM.gif'%}" alt="icon" id='menu-icon'></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,13 +32,13 @@
                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about-area">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#brand-area">TechStack</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
+          <a class="nav-link" href="#carouselExampleInterval">Portfolio</a>
         </li>
           <li class="nav-item">
           <a class="nav-link" href="#">Pages</a>
@@ -59,11 +57,6 @@
 </header>
 <!-- ==== Header Area === -->
 <body>
-<!-- === post ===!>
-{% for post in posts %}
-      {{posts }}
-{% endfor %} '-->
-
 <!-- ============Start Main Area=========== -->
 
 <main class="site-main">
@@ -93,8 +86,8 @@
     </section>
     <!-- ============End Banner Area=========== -->
     <!-- ======================About Area=================-->
-    <section class="about-area">
-      <div class="container-fluid">
+    <section class="about-area" >
+      <div class="container-fluid" id="about-area">
         <div class="row">
           <div class="col-lg-6 col-md-12">
             <div class="about-image">
@@ -128,10 +121,10 @@
       </div>
     </section>
      <!-- =======================End Area ================-->
-<! ================== Start Brand Area =================-->
+<!-- ================== Start Brand Area =================-->
 
 <section class="brand-area">
-  <div class="container-fluid">
+  <div class="container-fluid" id="brand-area">
     <div class="row">
       <div class="col-xl-6 col-lg-12 col-md-12">
         <div class="first-row row">
@@ -140,8 +133,9 @@
               <div class='techstack'> 
               <img src="{% static 'img/brand/python.png' %}" alt="brand-1" width="80" height="80" title="Python">
               <div class='tech'>
-                <br><h5><img src="{% static 'img/brand/python.png' %}" alt="brand-1" width="30" height="30" title="Python"><b>Python</h5></b><br>
+                <br><h5><img src="{% static 'img/brand/python.png' %}" alt="brand-1" width="30" height="30" title="Python"><b>Python</b></h5>><br>
                 • Scientific Computing with Python – (Freecodecamp - 300hrs)<br>
+                • Google IT Automation Professional Certificate – (Google - 300hrs)
                 • Crash course on Python - (Google – 50hrs)<br>
                 • Using Python to iteract with OS – (Google – 50hrs)<br>
                 • Troubleshooting and Debugging techniques (Google - 50 hrs)<br>
@@ -162,7 +156,7 @@
           <div class="single-brand">
               <div class='techstack'> 
               <img src="{% static 'img/brand/django.png' %}" alt="brand-2" width="80" height="80">
-            <div class='tech'><br><h5><img src="{% static 'img/brand/django.png' %}" alt="brand-2" width="60" height="60"><b></h5></b><br>
+            <div class='tech'><img src="{% static 'img/brand/django.png' %}" alt="brand-2" width="60" height="60"><br>
               • WebApp Technologies and Django – (University of Michigan - 50hrs)<br>
               • Django Advanced – (Alura – 100hrs)<br>
               • Front-end Formation (Alura - 100hrs)<br><br></div>
@@ -173,7 +167,7 @@
           <div class="single-brand">
             <div class='techstack'> 
             <img src="{% static 'img/brand/java2.png' %}" alt="brand-3" width="100" height="100">
-            <div class='tech'><br><h5><img src="{% static 'img/brand/java2.png' %}" alt="brand-3" width="70" height="70"><b></h5></b>
+            <div class='tech'><br><img src="{% static 'img/brand/java2.png' %}" alt="brand-3" width="70" height="70">
               • Algorithms (CEV-Curso em video – 40hrs)<br>
               • Java Basics (CEV- Curso em video - 40hrs)<br>
               • Certification Java Advanced – (Alura – 80hrs)<br><br></div>
@@ -184,7 +178,7 @@
           <div class="single-brand">
             <div class='techstack'>
             <img src="{% static 'img/brand/php.png' %}" alt="brand-4" width="80" height="80">
-            <div class='tech'><br><h5><img src="{% static 'img/brand/php.png' %}" alt="brand-4" width="60" height="60"><b></h5></b>
+            <div class='tech'><br><img src="{% static 'img/brand/php.png' %}" alt="brand-4" width="60" height="60">
               • PHP BASIC ( CEV-Curso em video – 40hrs)<br><br></div>
               </div>
           </div>
@@ -202,7 +196,7 @@
         <div class="single-brand">
           <div class="techstack">
             <img src="{% static 'img/brand/git.png' %}" alt="brand-6" width="80" height="80 ">
-            <div class='tech'><br><h5><img src="{% static 'img/brand/git.png' %}" alt="brand-6" width="50" height="50"><b>GIT</h5></b><br>
+            <div class='tech'><br><h5><img src="{% static 'img/brand/git.png' %}" alt="brand-6" width="50" height="50"><b>GIT</b></h5><br>
               • Introduction to Git and GitHub – (Google – 20hrs)<br>
               • Git and GitHub – (Alura – 6 hrs)<br>
               • Continuous user - (200hrs+)</div></div>
@@ -232,11 +226,12 @@
               <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="single-brand">
                 <div class="techstack">
-                  <img src="{% static 'img/brand/office.png' %}" alt="brand-8" width="80" height="80">
-                  <div class='tech'><br><b><h5><img src="{% static 'img/brand/office.png' %}" alt="brand-8" width="40" height="40">Microsof Office</h5></b><br>
-                    • Many Courses basics <br>
-                    • Continuous user<br><br></div></div>
-                  
+                  <img src="{% static 'img/brand/rest.png' %}" alt="brand-8" width="120" height="70">
+                  <div class='tech'><br><b><img src="{% static 'img/brand/rest.png' %}" alt="brand-8" width="90" height="40">Django Rest API</b><br>
+                    • Training Django Rest API - (Alura - 50hrs)  <br>
+                    • API with Django3: Rest Framework (Alura - 12hrs)<br>
+                    • API with Django3: CORS, versioning (Alura - 20hrs) <br>
+                    • API with Django3: Filters, searchs, validations (Alura - 20hrs)<br><br></div></div>
                 </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
@@ -272,7 +267,7 @@
           <div class="single-brand">
             <div class="techstack">
             <img src="{% static 'img/brand/qt.png' %}" alt="brand-12" width="75" height="75">
-            <div class='tech'><br><b><h5><img src="{% static 'img/brand/qt.png' %}" alt="brand-12" width="75" height="75">PyQt</h5></b><br>
+            <div class='tech'><br><b><img src="{% static 'img/brand/qt.png' %}" alt="brand-12" width="75" height="75">PyQt</b><br>
               • Developed many bots using graphic interface at PyQt and Tkinter <br><br></div></div>
              
             </div>
@@ -281,7 +276,7 @@
             <div class="single-brand">
               <div class="techstack"> 
                 <img src="{% static 'img/brand/linux.png' %}" alt="brand-13" width="75" height="75">
-                <div class='tech'><br><b><h5><img src="{% static 'img/brand/linux.png' %}" alt="brand-13" width="75" height="75">Linux</h5></b><br>
+                <div class='tech'><br><b><img src="{% static 'img/brand/linux.png' %}" alt="brand-13" width="75" height="75">Linux</b><br>
                   • User Since 2020<br>
                   • Deploy at linux servers <br><br></div></div>
               </div>
@@ -290,7 +285,7 @@
               <div class="single-brand">
                 <div class="techstack">
                   <img src="{% static 'img/brand/windows.png' %}" alt="brand-14" width="75" height="75">
-                  <div class='tech'><br><b><h5><img src="{% static 'img/brand/windows.png' %}" alt="brand-14" width="75" height="75">Microsof Windows and W. Server</h5></b><br>
+                  <div class='tech'><br><img src="{% static 'img/brand/windows.png' %}" alt="brand-14" width="75" height="75">Microsof Windows and W. Server<br>
                     • User since 2000<br>
                   • Many basics courses <br><br></div></div>
                 </div>
@@ -299,7 +294,7 @@
                 <div class="single-brand">
                   <div class="techstack">
                     <img src="{% static 'img/brand/server.png' %}" alt="brand-15" width="75" height="75">
-                    <div class='tech'><br><b><h5><img src="{% static 'img/brand/server.png' %}" alt="brand-15" width="75" height="75">Microsof SQL Server</h5></b><br>
+                    <div class='tech'><br><b><img src="{% static 'img/brand/server.png' %}" alt="brand-15" width="75" height="75">Microsof SQL Server</b><br>
                       • SQL Server Introduction at Microsoft SQL Server 2017 (Alura – 12hrs)<br>
                     • SQL Server Advanced at Microsoft SQL Server 2017 (Alura – 12 hrs) <br><br></div></div>
                   </div>
@@ -308,7 +303,7 @@
                   <div class="single-brand">
                     <div class="techstack">
                       <img src="{% static 'img/brand/postgree.png' %}" alt="brand-16" width="75" height="75">
-                      <div class='tech'><br><b><h5><img src="{% static 'img/brand/postgree.png' %}" alt="brand-16" width="75" height="75">Postgre</h5></b><br>
+                      <div class='tech'><br><img src="{% static 'img/brand/postgree.png' %}" alt="brand-16" width="75" height="75">Postgre<br>
                         • Work in some projects using postgree<br>
                         • SQL Server Introduction at Microsoft SQL Server 2017 (Alura – 12hrs)<br>
                       • SQL Server Advanced at Microsoft SQL Server 2017 (Alura – 12 hrs) <br><br></div></div>
@@ -318,7 +313,7 @@
             <div class="single-brand">
               <div class="techstack">
                 <img src="{% static 'img/brand/mysql.png' %}" alt="brand-17" width="75" height="75">
-                <div class='tech'><br><b><h5><img src="{% static 'img/brand/mysql.png' %}" alt="brand-17" width="75" height="75"></h5></b><br>
+                <div class='tech'><br><img src="{% static 'img/brand/mysql.png' %}" alt="brand-17" width="75" height="75"><br>
                   • SQL Server Introduction at Microsoft SQL Server 2017 (Alura – 12hrs)<br>
                 • SQL Server Advanced at Microsoft SQL Server 2017 (Alura – 12 hrs) <br><br></div></div>
                 
@@ -328,7 +323,7 @@
               <div class="single-brand">
                 <div class="techstack">
             <img src="{% static 'img/brand/aws.png' %}" alt="brand-18" width="75" height="75">
-            <div class='tech'><br><b><h5><img src="{% static 'img/brand/aws.png' %}" alt="brand-18" width="75" height="75">Amazon AWS</h5></b><br>
+            <div class='tech'><br><img src="{% static 'img/brand/aws.png' %}" alt="brand-18" width="75" height="75">Amazon AWS<br>
             • Amazon s3: Storage and manupulation of elements in the cloud<br><br></div></div>
             </div>
           </div>
@@ -336,7 +331,7 @@
             <div class="single-brand">
               <div class="techstack">
           <img src="{% static 'img/brand/wordpress.png' %}" alt="brand-20" width="75" height="75">
-          <div class='tech'><br><b><h5><img src="{% static 'img/brand/wordpress.png' %}" alt="brand-20" width="50" height="50">Wordpress</h5></b><br>
+          <div class='tech'><br><img src="{% static 'img/brand/wordpress.png' %}" alt="brand-20" width="50" height="50">Wordpress<br>
             • Formation Wordpress ( Alura - 60hrs)<br><br></div></div>
           </div>
         </div>
@@ -344,7 +339,7 @@
           <div class="single-brand">
             <div class="techstack">
         <img src="{% static 'img/brand/azure.png' %}" alt="brand-21" width="75" height="75">
-        <div class='tech'><br><b><h5><img src="{% static 'img/brand/azure.png' %}" alt="brand-21" width="50" height="50">Microsoft Azure</h5></b><br>
+        <div class='tech'><br><img src="{% static 'img/brand/azure.png' %}" alt="brand-21" width="50" height="50">Microsoft Azure<br>
           • AZ-900 Certification: fundamentals ( Alura - 50hrs)<br><br></div></div>
            </div>
           </div>
@@ -377,10 +372,14 @@
 </section>
 
 
-<! ================== End Brand Area =================-->
+<!-- ================== End Brand Area =================-->
 
 <!-- ============End Main Area=========== -->
+<section class="portifolio-area" >
+  <div class="container-fluid" id="portifolio-area">
+  </div></section>
 
-</body>
 <script type="text/javascript" src="{% static 'js/animationbanner.js' %}"> </script>
+</main>
+</body>
 </html>

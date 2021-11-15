@@ -36,11 +36,12 @@
 /* start  navigation */
 
 #menu-icon  {
-    opacity: 0.5;
+    weight:250px;
+    height:250px;
+
 }
 #menu-icon:hover  {
     animation: bounce 1s;
-    opacity: 0.7;
 }
 
 
@@ -76,6 +77,10 @@
 /* end navigation */
 
 /* Banner Area */
+
+#animacao-title{
+   padding: 300px;
+}
 
 .site-main .site-banner .site-title h3{
 padding-top:5%;

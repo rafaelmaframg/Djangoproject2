@@ -36,11 +36,12 @@
 /* start  navigation */
 
 #menu-icon  {
-    opacity: 0.5;
+    weight:200px;
+    height:200px;
+
 }
 #menu-icon:hover  {
     animation: bounce 1s;
-    opacity: 0.7;
 }
 
 
@@ -105,7 +106,7 @@ font-size: 1.5rem;
 }
 
 .site-main .site-banner .banner-image > img{
-padding: 2rem 0;
+padding: 0rem 0;
 width: 90rem;
 }
 
@@ -155,7 +156,6 @@ width: 90rem;
     cursor: pointer;
     transition: transform .8s ease ;
 }
-
 
 .tech{
    display: none;
