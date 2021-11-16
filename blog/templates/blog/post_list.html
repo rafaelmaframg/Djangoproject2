@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+     <meta http-equiv="pragma" content="no-cache" />
     <title>Rafael Mafra</title>
      <!--  Bootstrap css file  -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
      <!--  font awesome icons  -->
     <link rel="stylesheet" href="{% static 'css/all.min.css'%}">
-
+    <!-- Bootstrap JS -->
+    <link href="{% static 'js/bootstrap.min.js' %}" rel="stylesheet" type="text/css" />
     <!--  custom css file  -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet" >
-   
     <!--  Responsive css file  -->
     <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
-    <link rel="stylesheet" href="{% static 'css/cssbanner'%}">
     <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"> </script>
 </head>
 <!-- ==== Header Area === -->
@@ -38,7 +38,7 @@
           <a class="nav-link" href="#brand-area">TechStack</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#carouselExampleInterval">Portfolio</a>
+          <a class="nav-link" href="#portfolio-index">Portfolio</a>
         </li>
           <li class="nav-item">
           <a class="nav-link" href="#">Pages</a>
@@ -344,7 +344,7 @@
            </div>
           </div>
         </div>
-      </div> 
+      </div>
       <div class="col-xl-6 col-lg-12 col-md-12">
         <div class="experience-area" id='experiencia'>
           <div class="d-flex flex-row years-area">
@@ -370,14 +370,66 @@
     </div>
   </div>
 </section>
-
-
 <!-- ================== End Brand Area =================-->
+  <!-- ========== Start Portfolio-area =========== -->
 
+<section class="portfolio-area" >
+  <div class="container-fluid" id="portfolio-index">
+    <div id="bg-portfolio"><h1>Just a little about me</h1></div>
+    <div class="row" id="caro">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <a href="https://londontfl.herokuapp.com/" target="_blank">
+      <img src="{% static 'img/index.jpg'%}" class="d-block w-100" alt="1" >
+      <div class="carousel-caption d-none d-md-block">
+        <h5>TFL - API Transport London</h5>
+        <p>Get the API data from TFL, render and store data.</p>
+      </div></a>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <a href="https://mafrael.herokuapp.com/"><img src="{% static 'img/oet.jpg'%}" class="d-md-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>CRUD- TDD-construction</h5>
+        <p>A simple project developed in TDD construction</p>
+      </div></a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://django-restcustomers.herokuapp.com/">
+      <img src="{% static 'img/rest.jpg'%}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+         <h5>DJANGO-REST- CRUD</h5>
+        <p>A simple project developed in REST</p>
+      </div></a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://rafaelmafra22.pythonanywhere.com/">
+      <img src="{% static 'img/book.jpg'%}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+           <h5>CRUD - Django</h5>
+        <p>Django Crud with auth system</p>
+      </div></a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div></div></div>
+</section>
+  <!-- ========== End Portfolio-area =========== -->
 <!-- ============End Main Area=========== -->
-<section class="portifolio-area" >
-  <div class="container-fluid" id="portifolio-area">
-  </div></section>
+
 
 <script type="text/javascript" src="{% static 'js/animationbanner.js' %}"> </script>
 </main>

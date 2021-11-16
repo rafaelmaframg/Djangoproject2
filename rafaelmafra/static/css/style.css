@@ -38,8 +38,8 @@
 #menu-icon  {
     weight:200px;
     height:200px;
-
 }
+
 #menu-icon:hover  {
     animation: bounce 1s;
 }
@@ -230,8 +230,33 @@ width: 90rem;
 
 .site-main .brand-area .experience-area .call-area{
     padding-left: 10rem;
- 
 }
 /* End Brand area */
+#bg-portfolio{
+    position: relative;
+    background:#2997e015;
+    width: 600px;
+    height: 80px;
+    margin-left: 380px;
+    margin-bottom: 15px;
+    z-index: -1;
+    padding: 10px;
+}
+#portfolio-index {
+position: relative;
+top: -180px;
+z-index: 1;
+}
 
+#bg-portfolio h1{
+padding: 27px;
+text-align: center;
+font: normal bold 30px/20px var(--roboto);
+letter-spacing: 5px;
+text-transform: uppercase;
+}
 
+#caro{
+width: 800px;
+margin-left: 300px;
+}
