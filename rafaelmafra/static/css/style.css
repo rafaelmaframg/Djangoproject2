@@ -36,8 +36,8 @@
 /* start  navigation */
 
 #menu-icon  {
-    weight:200px;
-    height:200px;
+    width: 40%;
+    height: 40%;
 }
 
 #menu-icon:hover  {
@@ -53,8 +53,9 @@
 
 }
 .header_area .main-menu .nav-item .nav-link{
-    font: normal 500 15px/2px var(--roboto);
+    font: normal 500 1rem/2rem var(--roboto);
     text-transform: uppercase;
+    text-align: center;
     padding: 1rem;
     color: var(--title-color);
 }
@@ -78,9 +79,6 @@
 
 /* Banner Area */
 
-#animacao-title{
-   padding: 300px;
-}
 
 .site-main .site-banner .site-title h3{
 padding-top:5%;
@@ -89,7 +87,7 @@ font-weight: 500;
 
 .site-main .site-banner .site-title h3::after{
 content:'';
-height:2px;
+height:0.1rem;
 width:18vw;
 background: black;
 display: inline-block;
@@ -120,14 +118,14 @@ width: 90rem;
 
 .site-main .about-area .about-image{
    position: relative;
-   top: 80px;
+   top: 25%;
 }
 
 .site-main .about-area .about-title h2 >span{
     display: block;
     padding: 0.2rem;
-    font: normal bold 49px/60px var(--roboto);
-    letter-spacing: 21px;   
+    font: normal bold 3rem/3rem var(--roboto);
+    letter-spacing: 1rem;   
 }
 
 .site-main .about-area .about-title .paragraph >p{
@@ -154,8 +152,8 @@ width: 90rem;
     filter: grayscale(0.5);
     text-align: center;
     padding: 1rem 0rem; 
-    width: 120px;
-    height:120px;
+    width: 8%;
+    height:14%;
     cursor: pointer;
     transition: transform .8s ease ;
 }
@@ -170,8 +168,8 @@ width: 90rem;
     display: block;
     text-align: left;
     position: absolute;
-    left: 200px;
-    top: -65px; 
+    left: 100%;
+    top: 50%; 
     background: #a6dbffe7;
     width: max-content;
     height: max-content;
@@ -182,14 +180,8 @@ width: 90rem;
 }
 .site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
     position: absolute;
-    filter: grayscale(0);
-    box-shadow: var(--box-shadow);
-    border-radius: 5rem;
-    transform: scale(1.2);
-    transition: box-shadow 1s;
     z-index: 1;
     }
-
 .site-main .brand-area .experience-area{
     padding-left: 1rem;
 }
@@ -238,9 +230,9 @@ width: 90rem;
 #bg-portfolio{
     position: relative;
     background:#2997e015;
-    width: 600px;
+    width: 45%;
     height: 80px;
-    margin-left: 380px;
+    margin-left: 23%;
     margin-bottom: 15px;
     z-index: -1;
     padding: 10px;
@@ -260,10 +252,10 @@ text-transform: uppercase;
 }
 
 #caro{
-width: 800px;
+width: 50%;
 margin-left: 20%;
 }
 
-#dark{
+.dark{
     color: white;
 }
