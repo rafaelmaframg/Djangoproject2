@@ -36,8 +36,8 @@
 /* start  navigation */
 
 #menu-icon  {
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 60%;
 }
 
 #menu-icon:hover  {
@@ -50,10 +50,9 @@
 }
 .header_area .main-menu .navbar{
     padding: 1rem 10rem;
-
 }
 .header_area .main-menu .nav-item .nav-link{
-    font: normal 500 1rem/2rem var(--roboto);
+    font: normal 500 0.7rem/0.5rem var(--roboto);
     text-transform: uppercase;
     text-align: center;
     padding: 1rem;
@@ -96,11 +95,11 @@ transform:translateY(-10px);
 }
 
 .site-main .site-banner .site-title h1{
-font-size: 5rem;
+font-size: 3rem;
 }
 
 .site-main .site-banner .site-title h4{
-font-size: 1.5rem;
+font-size: 1rem;
 }
 
 .site-main .site-banner .banner-image > img{
@@ -258,4 +257,8 @@ margin-left: 20%;
 
 .dark{
     color: white;
+}
+
+#animationscript{
+    position: absolute;
 }

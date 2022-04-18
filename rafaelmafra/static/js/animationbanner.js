@@ -1,6 +1,6 @@
 
 function typingEffect() {
-    const contactTexts = ['I am Rafael Mafra😊', 'I am Python Developer!😄', 'I am Looking for Entry Level', 'Lets do something together!🤗', 'Do you need help in something?👍', 'I am programming enthusiastic'];
+    const contactTexts = ['I am Rafael Mafra😊', 'I am Python Developer!', 'I am Looking for Entry Level', 'Lets do something together!', 'Do you need help in something?', 'I am programming enthusiastic'];
     const typedtext = document.getElementsByClassName("typedtext")[0];
     let removing = false;
     let idx = char = 0;
